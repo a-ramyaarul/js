@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess</title>
+  </head>
+  <body>
+    <p>Guess Head or Tail</p>
+    <button onclick="
+    const button1 = Math.random();
+    let variable1='';
+    if (button1 > 0 && button1<2/3 ){
+      variable1='Head';
+    }
+    else if(button1 >2/3 && button1<1){
+      variable1='Tail';
+    }
+    let result='';
+    if(variable1 === 'Head'){
+      result='You Win';
+    }
+    else if(variable1 === 'Tail'){
+      result='You lose';
+    }
+    alert (`You Clicked Head. Computer picked ${variable1}. ${result}`);
+    ">Head</button>
+    <button onclick="
+    const button2 = Math.random();
+    let variable2='';
+    if (button2 > 0 && button2<1/3 ){
+      variable2='Head';
+    }
+    else if(button2 >1/3 && button2<2/3){
+      variable2='Tail';
+    }
+    let result1='';
+    if(variable2 === 'Head'){
+      result1='You Lose';
+    }
+    else if(variable2 === 'Tail'){
+      result1='You Win';
+    }
+    alert (`You Clicked Tail. Computer picked ${variable2}. ${result1}`);
+    ">tail</button>
+    
+  </body>
+</html>

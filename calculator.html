@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compantible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>calculator</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        background-color: #ecf0f3;
+        font-family: sans-serif;
+        outline: none;
+      }
+      .cac{
+        height: 100vh;
+        display:flex;
+        flex-direction: row;
+        text-align:center;
+        justify-content:center;
+
+
+      }
+      .container{
+        border-radius: 30px;
+        padding: 15px;
+        background-color:  #ecf0f3;
+        display: grid;
+        grid-template-columns: repeat(4,68px);
+        box-shadow: inset 5px 5px 12px #ffffff,
+        5px 5px 12px rgba(0,0,0,.16);
+      }
+      button{
+        height: 48px;
+        width:48px;
+        background-color: #ecf0f3;
+        box-shadow:-5px -5px 12px #ffffff,
+                    5px 5px 12px rgba(0,0,0,.16);
+        border: none;
+       border-radius: 50%;
+       margin:8px;
+      font-size: 16px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class = "cac">
+      <div class="container">
+    <p>
+      <button onclick="
+        calculation += '1';
+        console.log(calculation);
+      ">1</button>
+
+      <button onclick="
+        calculation += '2';
+        console.log(calculation);
+      ">2</button>
+
+      <button onclick="
+        calculation += '3';
+        console.log(calculation);
+      ">3</button>
+
+      <button onclick="
+        calculation += ' + ';
+        console.log(calculation);
+      ">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '4';
+        console.log(calculation);
+      ">4</button>
+
+      <button onclick="
+        calculation += '5';
+        console.log(calculation);
+      ">5</button>
+
+      <button onclick="
+        calculation += '6';
+        console.log(calculation);
+      ">6</button>
+
+      <button onclick="
+        calculation += ' - ';
+        console.log(calculation);
+      ">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '7';
+        console.log(calculation);
+      ">7</button>
+
+      <button onclick="
+        calculation += '8';
+        console.log(calculation);
+      ">8</button>
+
+      <button onclick="
+        calculation += '9';
+        console.log(calculation);
+      ">9</button>
+
+      <button onclick="
+        calculation += ' * ';
+        console.log(calculation);
+      ">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation += '0';
+        console.log(calculation);
+      ">0</button>
+
+      <button onclick="
+        calculation += '.';
+        console.log(calculation);
+      ">.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        console.log(calculation);
+      ">=</button>
+
+      <button onclick="
+        calculation += ' / ';
+        console.log(calculation);
+      ">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+        console.log(calculation);
+      ">Clear</button>
+    </p>
+    </div>
+    </div>
+
+    <script>
+      let calculation = '';
+    </script>
+
+  </body>
+</html>
